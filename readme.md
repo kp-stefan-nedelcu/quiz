@@ -1,7 +1,7 @@
 
 ### #1 
 
-```
+```javascript
 // program to print a text 
 let a = "hello";
 const b = "world"
@@ -14,7 +14,7 @@ console.log(b)
 
 ### #2 
 
-```
+```javascript
 // program to print a text 
 let a = "hello";
 
@@ -27,8 +27,7 @@ greet();
 
 
 ### #3 
-```
-// program to show the change in global variable
+```javascript
 let a = "hello";
 
 function greet() {
@@ -40,12 +39,11 @@ console.log(a);
 
 //after the function call
 greet();
-console.log(a); // 3
+console.log(a); 
 ```
 
 ### #4 
-```
-// program showing local scope of a variable
+```javascript
 let a = "hello";
 
 function greet() {
@@ -54,31 +52,26 @@ function greet() {
 }
 
 greet();
-console.log(a + b); // error
+console.log(a + b); 
 ```
 
 ### #5 
-```
-// program showing block-scoped concept
-// global variable
+```javascript
 let a = 'Hello';
 
 function greet() {
 
-    // local variable
     let b = 'World';
 
     console.log(a + ' ' + b);
 
     if (b == 'World') {
 
-        // block-scoped variable
         let c = 'hello';
 
         console.log(a + ' ' + b + ' ' + c);
     }
 
-    // variable c cannot be accessed here
     console.log(a + ' ' + b + ' ' + c);
 }
 
@@ -86,8 +79,7 @@ greet();
 ```
 
 ### #6
-```
-// program to display a text using setTimeout method
+```javascript
 function greet() {
     console.log('Hello world');
 }
@@ -97,7 +89,7 @@ console.log('Hello guys');
 ```
 
 ### #7
-```
+```javascript
 let promise = new Promise(function (resolve, reject) {
     setTimeout(function () {
     resolve('Promise resolved 1')}, 4000); 
@@ -117,8 +109,8 @@ promise.then((res)=>{
 ```
 
 ### #8
-```
-// a promise
+```javascript
+
 let promise = new Promise(function (resolve, reject) {
     setTimeout(function () {
     resolve('Promise resolved')}, 4000); 
@@ -128,10 +120,9 @@ let promise2 = new Promise(function (resolve, reject) {
     resolve('Promise 2 resolved')}, 2000); 
 });
 
-// async function
+
 async function asyncFunc() {
 
-    // wait until the promise resolves 
     let result = await promise; 
     let result2 = await promise2;
     console.log(result);
@@ -139,13 +130,13 @@ async function asyncFunc() {
     console.log('hello');
 }
 
-// calling the async function
+
 asyncFunc();
 ```
 
 ### #9
 
-```
+```javascript
 const user = {
     name: 'John',
     location: {
@@ -166,7 +157,7 @@ console.log('Copy: ', copy.location);
 
 ### #10
 
-```
+```javascript
 var a = 10;
 var show = function(){
     console.log(a);
